@@ -4,21 +4,90 @@
     <meta charset="UTF-8">
     <title>Coursera</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <style type="text/css">
+    	* {
+    		box-sizing: border-box;
+    	}
+    	@media (min-width: 992px){
+    		div {
+    			 float: left;
+    			 margin-right: 2.5%;
+    			 width: 30%;
+    		}
+    		.about {
+    			margin-left: 2.5%;
+    		}
+
+		}
+		@media (min-width: 768px) and (max-width: 991px){
+			div {
+				float: left;
+				margin-right: 2.5%;
+				width: 46.5%;
+			}
+			.about {
+    			margin-left: 2.5%;
+    		}
+    		.packers {
+    			clear: left;
+    			margin-left: 2.5%;
+    			width: 95%;
+    		}
+    		.packers h4 {
+    			margin: 0 0 0 80%;
+        		width: 20%;
+    		}
+		}
+		@media (max-width: 767px){
+			div {
+				margin-right: 2.5%;
+				margin-left: 2.5%;
+				width: 95%;
+			}
+		}
+		h1 {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		div {
+ 			border:1px solid black;
+			background-color: #FFE4C4;
+			margin: 10px;
+			clear: right;
+		}
+		div h4 {
+			margin: 0 0 0 60%;
+			border-left: 1px solid black;
+			border-bottom: 1px solid black; 
+			text-align: center;
+			width: 40%;
+		}
+		div p {
+    		padding: 0 4px 4px 6px;
+		}
+		#s1 {
+			background-color: #d2143a;
+		}
+		#s2 {
+			background-color: #8B4513; 
+		}
+		#s3 {
+			background-color: #008000; 
+		}
+    </style>
   </head>
   <body>
   	<h1>Week-Two Assignment</h1>
-  	<div class="Container">
-  	<div class="row">
-  		<h4>About</h4>
+  	<div class="about">
+  		<h4 id="s1">About</h4>
   		<p>As we can write anything, the first thing that came into my mind on a Gameday was Football. I'm a fan of American Football and I'm not an American. I got introduced to this sport in my university which is a good sporting university.</p></div> 
-  	<div class="row">
-  		<h4>Saints</h4>
+  	<div class="saints">
+  		<h4 id="s2">Saints</h4>
   		<p>In the other two rows I'll talk about my favourite teams. The first one is my home team New Orleans Saints which is a natural favourite. Drew Brees is going good and hoope he have a great season. But I'm a big fan of Sean Payton and his style of play</p>
   	</div>
-  	<div class="row">
-  		<h4>Packers</h4>
+  	<div class="packers">
+  		<h4 id="s3">Packers</h4>
   		<p>My second team is Greenbay Packers. Among the players I like Aaron Rodgers. Saw some of his intial matches when he was booed in Greenbay after replcaing the great Brett Favre and reacing here is great. I like the way he celebrates by signaling the "Championship Belt". </p>
-  	</div>
   	</div>
   </body>
 </html>
